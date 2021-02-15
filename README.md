@@ -18,12 +18,12 @@ On Windows you may want to consider using Windows Subsystem for Linux (WSL) to s
 All the Julia library dependencies are declared in the Project.toml file and will be installed when following the steps below. See https://julialang.github.io/Pkg.jl/v1.5/environments/ about environments for more details.
 
 * git clone
-* <cd into dir>
+* \<cd into dir\>
 * julia   (or julia --project=.)
 * ] (to acticate pkg mode)
 * (v1.5) pkg> activate .    # activate project in current directory if not yet activated
 * (SomeProject) pkg> instantiate     # install dependencies
-* <backspace>  (to exit pkg-mode)
+* \<backspace\>  (to exit pkg-mode)
 * import Pluto
 * Pluto.run()
 * (Pluto server starts, listens to localhost:1234 by default, navigate there if not opened automatically in browser)
