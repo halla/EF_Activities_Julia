@@ -22,13 +22,13 @@ All the Julia library dependencies are declared in the Project.toml file and wil
 * julia   (or julia --project=.)
 * ] (to acticate pkg mode)
 * (v1.5) pkg> activate .    # activate project in current directory if not yet activated
-* (SomeProject) pkg> instantiate     # install dependencies
+* (EF_Activities_Julia) pkg> instantiate     # install dependencies, there are quite a bunch
 * \<backspace\>  (to exit pkg-mode)
 * import Pluto
 * Pluto.run()
 * (Pluto server starts, listens to localhost:1234 by default, navigate there if not opened automatically in browser)
 * select notebook to open
-* notebook automatically executes everything, might take a while
+* notebook automatically executes everything, might take a while, even minutes, due to compilation, especially on first time after install/update
   
 
 
