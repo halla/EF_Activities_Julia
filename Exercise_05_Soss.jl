@@ -14,7 +14,11 @@ end
 # ╔═╡ d5a648b8-7525-11eb-0eec-ad7fc25eaa4b
 md""""
 This version uses Soss https://github.com/cscherrer/Soss.jl
-
+* generate data from true parameters
+* describe model with priors
+* fit model to true data
+* examine mcmc diagnostics
+* examine results
 """
 
 # ╔═╡ a8e8be46-750c-11eb-30d0-253893696e5e
