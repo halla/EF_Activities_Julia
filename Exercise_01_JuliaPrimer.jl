@@ -1,8 +1,14 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
+
+# ╔═╡ f77b7f12-74f8-11eb-270a-c95378a81b40
+using PlutoUI # for with_terminal() function to display introspection results
+
+# ╔═╡ d4708242-74f8-11eb-02cb-452ae016ada2
+
 
 # ╔═╡ 57c9bc8a-66e4-11eb-194a-f1e5663526a6
 md"""
@@ -183,17 +189,21 @@ You can explore how Julia turns your code into assembly level instructions in a 
 @code_lowered fill(1,10)
 
 # ╔═╡ 1099c55c-66ea-11eb-3353-eb171625f1f0
-@code_llvm fill(1,10)
+with_terminal() do
+	@code_llvm fill(1,10)
+end
 
 # ╔═╡ 24116d06-66ea-11eb-10c6-7f7caecfe673
 @code_typed fill(1,10)
 
 # ╔═╡ 2c905988-66ea-11eb-0413-f3982298c8f8
-
-@code_native fill(1,10)
+with_terminal() do
+	@code_native fill(1,10)
+end
 
 
 # ╔═╡ Cell order:
+# ╠═d4708242-74f8-11eb-02cb-452ae016ada2
 # ╠═57c9bc8a-66e4-11eb-194a-f1e5663526a6
 # ╠═938503d8-6f81-11eb-37aa-378d4c129802
 # ╠═8ebb1632-6f82-11eb-0b05-5300d45c11fb
@@ -214,6 +224,7 @@ You can explore how Julia turns your code into assembly level instructions in a 
 # ╠═aa2fa814-7070-11eb-2259-b9b41afbe615
 # ╠═dd0b6c28-7070-11eb-0388-6fc21bb1e938
 # ╠═5cf47b60-6f85-11eb-0dbc-efe2adbf2c44
+# ╠═f77b7f12-74f8-11eb-270a-c95378a81b40
 # ╠═91091b94-66e4-11eb-11ef-fffe3f44a97f
 # ╠═04e53f02-66ea-11eb-06f4-8d04422c9b62
 # ╠═1099c55c-66ea-11eb-3353-eb171625f1f0
